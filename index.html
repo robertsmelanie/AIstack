@@ -9,6 +9,68 @@
     <h1>AI Stack</h1>
     <p>This page is under construction.</p>
     <p>Check back later for updates!</p>
+    <body class="bg-gray-100 text-gray-800 p-6">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+            <h1 class="text-3xl font-bold mb-6 text-center">🧠 AI Stack Builder</h1>
     
+            <!-- QUIZ FORM -->
+            <form id="quizForm" class="space-y-6">
+                <div>
+                    <label class="font-semibold">1. What type of creator are you?</label>
+                    <select id="creatorType" class="w-full p-2 border rounded mt-1">
+                        <option>YouTuber</option>
+                        <option>Blogger</option>
+                        <option>Course Creator</option>
+                        <option>Freelancer</option>
+                        <option>Marketing Agency</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label class="font-semibold">2. What are your main goals?</label>
+                    <select id="goals" multiple class="w-full p-2 border rounded mt-1 h-32">
+                        <option>Automate content creation</option>
+                        <option>Grow email list</option>
+                        <option>Optimize SEO</option>
+                        <option>Create better visuals</option>
+                        <option>Repurpose content</option>
+                    </select>
+                    <p class="text-sm text-gray-500 mt-1">Hold Ctrl/Cmd to select multiple</p>
+                </div>
+    
+                <div>
+                    <label class="font-semibold">3. What's your monthly budget?</label>
+                    <select id="budget" class="w-full p-2 border rounded mt-1">
+                        <option>Under $30</option>
+                        <option>$30–$70</option>
+                        <option>$70–$150</option>
+                        <option>$150+</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label class="font-semibold">4. Preferred workflow?</label>
+                    <select id="workflow" class="w-full p-2 border rounded mt-1">
+                        <option>Simple & fast (low-touch)</option>
+                        <option>Feature-rich (advanced)</option>
+                    </select>
+                </div>
+    
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+                    🔍 Build My Stack
+                </button>
+            </form>
+    
+            <!-- RESULTS -->
+            <div id="results" class="mt-10 hidden">
+                <h2 class="text-2xl font-semibold mb-4">🎯 Your AI Tool Stack</h2>
+                <div id="toolList" class="space-y-4"></div>
+    
+                <div class="mt-6 border-t pt-4">
+                    <p class="font-medium">💰 Estimated Monthly Cost: <span id="totalCost" class="font-bold"></span></p>
+                    <p class="font-medium">⭐ Value Score: <span id="valueScore" class="font-bold"></span>/10</p>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
